@@ -1,0 +1,21 @@
+{
+  "name": "Pakistan Super FireWorks",
+  "short_name": "PSFW",
+  "description": "Pakistan's Biggest Digital Fire Works Company",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ff5500",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/"
+} 

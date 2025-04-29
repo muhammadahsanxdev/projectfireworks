@@ -1,0 +1,20 @@
+{
+  "components\\Layout.js -> ./BackgroundSlideshow": {
+    "id": "components\\Layout.js -> ./BackgroundSlideshow",
+    "files": [
+      "static/chunks/components_BackgroundSlideshow_js.js"
+    ]
+  },
+  "components\\Layout.js -> ./Footer": {
+    "id": "components\\Layout.js -> ./Footer",
+    "files": [
+      "static/chunks/components_Footer_js.js"
+    ]
+  },
+  "components\\Layout.js -> ./Header": {
+    "id": "components\\Layout.js -> ./Header",
+    "files": [
+      "static/chunks/components_Header_js.js"
+    ]
+  }
+}

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add support for aspect ratio if the plugin doesn't work */
+.aspect-w-16 {
+  position: relative;
+  padding-bottom: calc(9 / 16 * 100%);
+}
+.aspect-w-16 > * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply font-sans text-gray-800 antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section {
+    @apply py-16 md:py-24;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(to right, #ff4e00, #ff9500);
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-primary text-white hover:shadow-lg focus:ring-primary-500;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-primary-600 border-primary-200 hover:bg-gray-50 focus:ring-primary-500;
+  }
+  
+  .card {
+    @apply rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-primary;
+  }
+}
+
+/* Standard hover effect that replaces the previous firework-card animation for better performance */
+.hover-card {
+  @apply relative overflow-hidden;
+}
+
+.hover-card::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-full h-0 transition-all duration-300;
+  background: linear-gradient(to top, rgba(239, 68, 68, 0.1), transparent);
+}
+
+.hover-card:hover::after {
+  @apply h-full;
+}
+
+/* Floating animation for decorative elements */
+@keyframes floating {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: translateY(-15px) translateX(10px);
+  }
+  50% {
+    transform: translateY(0px) translateX(15px);
+  }
+  75% {
+    transform: translateY(15px) translateX(-10px);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+}
+
+.floating {
+  animation: floating 6s ease-in-out infinite;
+  will-change: transform;
+  filter: blur(0.5px);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .floating {
+    animation-duration: 4s;
+    transform: scale(0.8) translateY(0px) translateX(0px);
+  }
+}
+
+/* Image quality improvements */
+img[src$=".gif"] {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  image-rendering: crisp-edges;
+}
+
+@media (max-width: 768px) {
+  img[src$=".gif"] {
+    image-rendering: auto;
+  }
+} 
