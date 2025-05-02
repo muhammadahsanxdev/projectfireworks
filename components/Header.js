@@ -84,7 +84,7 @@ const Header = () => {
             <span className="text-sm sm:text-lg font-heading font-bold">
               <span className="gradient-text">Pakistan</span>
               <span className="ml-1 gradient-text">Super</span>
-              <span className={`ml-1 gradient-text`}>FireWorks</span>
+              <span className={`ml-1 gradient-text`}>Fireworks</span>
             </span>
           </motion.div>
         </Link>

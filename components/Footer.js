@@ -163,8 +163,7 @@ export default function Footer() {
                 />
               </div>
               <div className="text-xl font-heading font-bold text-white">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">Pakistan Super</span>
-                <span className="ml-1">FireWorks</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">Pakistan Super Fireworks</span>
               </div>
             </div>
             <p className="text-gray-400 mb-6 max-w-sm">

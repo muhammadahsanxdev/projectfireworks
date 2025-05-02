@@ -248,7 +248,7 @@ export default function Home() {
                 variants={staggerChildren}
               >
                 <motion.h1 
-                  className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white"
+                  className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 md:mb-6 text-white mt-6 md:mt-16"
                   variants={fadeInUp}
                 >
                   Pakistan&apos;s Biggest <br />
@@ -257,7 +257,7 @@ export default function Home() {
                 </motion.h1>
                 
                 <motion.p 
-                  className="text-lg text-gray-200 mb-8 max-w-lg font-bold"
+                  className="text-lg text-gray-200 mb-4 md:mb-8 max-w-lg font-bold"
                   variants={fadeInUp}
                 >
                   Professional firework displays for weddings, corporate events, New Year&apos;s Eve celebrations, and Independence Day across Islamabad, Lahore, Karachi and all of Pakistan.
@@ -267,12 +267,12 @@ export default function Home() {
                   className="flex flex-col sm:flex-row gap-4"
                   variants={fadeInUp}
                 >
-                  <div className="text-center mt-10">
+                  <div className="text-center mt-6 md:mt-10">
                     <Link href="/contact" className="bg-gradient-primary text-white py-3 px-6 rounded-lg shadow-md font-medium hover:shadow-lg transition-all duration-200">
                       Contact Us  
                     </Link>
                   </div>
-                  <div className="text-center mt-10">
+                  <div className="text-center mt-6 md:mt-10">
                     <Link href="/packages" className="bg-gradient-primary text-white py-3 px-6 rounded-lg shadow-md font-medium hover:shadow-lg transition-all duration-200">
                       Explore Packages
                     </Link>
@@ -313,7 +313,7 @@ export default function Home() {
                 transition={{ duration: 0.6 }}
               >
                 {/* Static Image - Using next/image for optimization */}
-                <div className="absolute inset-0 w-full h-full overflow-hidden flex flex-col items-center justify-start lg:pt-10">
+                <div className="absolute inset-0 w-full h-full overflow-hidden flex flex-col items-center justify-center">
                   <div className="relative flex flex-col items-center">
                     {!logoError ? (
                       <Image 
@@ -322,19 +322,19 @@ export default function Home() {
                         width={300}
                         height={300}
                         quality={90}
-                        className="object-contain drop-shadow-lg h-auto"
+                        className="w-[220px] h-[220px] sm:w-[220px] sm:h-[220px] md:w-[220px] md:h-[220px] lg:w-[300px] lg:h-[300px] object-contain drop-shadow-lg mt-10 sm:mt-0"
                         priority
                         onError={handleLogoError}
                       />
                     ) : (
-                      <div className="w-[300px] h-[300px] flex items-center justify-center rounded-full bg-primary-600 text-white">
-                        <span className="text-4xl font-bold">PSFW</span>
+                      <div className="w-[180px] h-[180px] sm:w-[180px] sm:h-[180px] md:w-[220px] md:h-[220px] lg:w-[300px] lg:h-[300px] flex items-center justify-center rounded-full bg-primary-600 text-white mt-10 sm:mt-0">
+                        <span className="text-2xl sm:text-3xl md:text-4xl font-bold">PSFW</span>
                       </div>
                     )}
                   </div>
-                  <div className="mt-6 text-center w-full px-4">
+                  <div className="mt-3 sm:mt-6 text-center w-full px-4">
                     <p className="text-xl md:text-3xl text-white font-bold">
-                      <span className="gradient-text text-3xl md:text-4xl lg:text-5xl whitespace-nowrap">Pakistan Super Fireworks</span>
+                      <span className="gradient-text text-3xl sm:text-3xl md:text-4xl lg:text-4xl">Pakistan Super Fireworks</span>
                       <br/>
                       <span className="text-lg md:text-xl">Event Management Company</span>
                     </p>
@@ -346,11 +346,11 @@ export default function Home() {
         </section>
         
         {/* About Section with SEO keywords */}
-        <section className="py-20 relative">
+        <section className="py-10 relative">
           <div className="absolute inset-0 bg-black bg-opacity-60" style={sectionOverlayStyle}></div>
-          <div className="container relative z-10 py-16">
+          <div className="container relative z-10 py-8">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-white">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-white">
                 Pakistan&apos;s Leading <span className="gradient-text">Fireworks Company</span>
               </h2>
               <div className="prose prose-lg max-w-none text-gray-200">
@@ -369,10 +369,10 @@ export default function Home() {
         </section>
         
         {/* Featured Videos Section */}
-        <section className="py-20 relative">
+        <section className="py-10 relative">
           <div className="absolute inset-0 bg-black bg-opacity-70" style={sectionOverlayStyle}></div>
-          <div className="container relative z-10 py-16">
-            <div className="text-center mb-16">
+          <div className="container relative z-10 py-8">
+            <div className="text-center mb-10">
               <motion.h2 
                 className="text-3xl md:text-4xl font-bold mb-4 text-white"
                 initial={{ opacity: 0, y: 20 }}
@@ -394,13 +394,13 @@ export default function Home() {
             </div>
             
             {videosLoading && (
-              <div className="flex justify-center items-center py-16">
+              <div className="flex justify-center items-center py-8">
                 <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white"></div>
               </div>
             )}
             
             {videosError && (
-              <div className="text-center py-8">
+              <div className="text-center py-6">
                 <p className="text-red-400 text-lg">{videosError}</p>
               </div>
             )}
@@ -410,12 +410,12 @@ export default function Home() {
             )}
             
             {!videosLoading && !videosError && featuredVideos.length === 0 && (
-              <div className="text-center py-8">
+              <div className="text-center py-6">
                 <p className="text-gray-300 text-lg">No videos found.</p>
               </div>
             )}
             
-            <div className="text-center mt-10">
+            <div className="text-center mt-8">
               <Link href="/videos" className="bg-gradient-primary text-white py-3 px-6 rounded-lg shadow-md font-medium hover:shadow-lg transition-all duration-200">
                 View All Videos
               </Link>
@@ -424,10 +424,10 @@ export default function Home() {
         </section>
         
         {/* Services/Events Section */}
-        <section className="py-20 relative">
+        <section className="py-10 relative">
           <div className="absolute inset-0 bg-black bg-opacity-70" style={sectionOverlayStyle}></div>
-          <div className="container relative z-10 py-16">
-            <div className="text-center mb-16">
+          <div className="container relative z-10 py-8">
+            <div className="text-center mb-10">
               <motion.h2 
                 className="text-3xl md:text-4xl font-bold mb-4 text-white"
                 initial={{ opacity: 0, y: 20 }}
@@ -486,10 +486,10 @@ export default function Home() {
         </section>
         
         {/* Contact Section */}
-        <section className="py-20 relative">
+        <section className="py-10 relative">
           <div className="absolute inset-0 bg-black bg-opacity-70" style={sectionOverlayStyle}></div>
-          <div className="container relative z-10 py-16">
-            <div className="text-center mb-16">
+          <div className="container relative z-10 py-8">
+            <div className="text-center mb-10">
               <motion.h2 
                 className="text-3xl md:text-4xl font-bold mb-4 text-white"
                 initial={{ opacity: 0, y: 20 }}
@@ -570,10 +570,10 @@ export default function Home() {
         </section>
         
         {/* Testimonials Section */}
-        <section className="py-20 relative">
+        <section className="py-10 relative">
           <div className="absolute inset-0 bg-black bg-opacity-70" style={sectionOverlayStyle}></div>
-          <div className="container relative z-10 py-16">
-            <div className="text-center mb-16">
+          <div className="container relative z-10 py-8">
+            <div className="text-center mb-10">
               <motion.h2 
                 className="text-3xl md:text-4xl font-bold mb-4 text-white"
                 initial={{ opacity: 0, y: 20 }}
@@ -628,11 +628,11 @@ export default function Home() {
         </section>
 
         {/* SEO Footer Content */}
-        <section className="py-20 relative">
+        <section className="py-10 relative">
           <div className="absolute inset-0 bg-black bg-opacity-70" style={sectionOverlayStyle}></div>
-          <div className="container relative z-10 py-16">
+          <div className="container relative z-10 py-8">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl font-bold mb-6 text-center text-white">
+              <h2 className="text-2xl font-bold mb-4 text-center text-white">
                 Professional Fireworks Services <span className="gradient-text">Across Pakistan</span>
               </h2>
               <div className="prose prose-sm max-w-none text-gray-200">
@@ -651,9 +651,9 @@ export default function Home() {
         </section>
         
         {/* Call to Action */}
-        <section className="py-20 relative">
+        <section className="py-10 relative">
           <div className="absolute inset-0 bg-black bg-opacity-60" style={sectionOverlayStyle}></div>
-          <div className="container relative z-10 py-16">
+          <div className="container relative z-10 py-8">
             <motion.div 
               className="relative rounded-2xl overflow-hidden"
               initial={{ opacity: 0, y: 30 }}
@@ -663,7 +663,7 @@ export default function Home() {
             >
               <div className="absolute inset-0 bg-gradient-primary opacity-90"></div>
               
-              <div className="relative py-16 px-8 md:py-24 md:px-16 text-center">
+              <div className="relative py-12 px-6 md:py-16 md:px-12 text-center">
                 <motion.h2 
                   className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
                   initial={{ opacity: 0, y: 20 }}
@@ -675,7 +675,7 @@ export default function Home() {
                 </motion.h2>
                 
                 <motion.p 
-                  className="text-white text-lg mb-8 max-w-2xl mx-auto"
+                  className="text-white text-lg mb-6 max-w-2xl mx-auto"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}

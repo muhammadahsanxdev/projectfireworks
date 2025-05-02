@@ -155,7 +155,7 @@ export default function Packages() {
                   playsInline
                   muted 
                   loop
-                  poster="/videos/fireworksworking-1.jpg"
+                  poster="/videos/fireworksworking-1.png"
                   ref={videoRef}
                 >
                   <source src="/videos/fireworksworking-1.mp4" type="video/mp4" />
