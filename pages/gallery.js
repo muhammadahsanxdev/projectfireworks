@@ -416,7 +416,7 @@ export default function Gallery({ galleryItems }) {
       keywords="fireworks gallery, fireworks photos, event fireworks, wedding fireworks pakistan, display gallery"
     >
       <Head>
-        <title>Gallery - Pakistan Super FireWorks</title>
+        <title>Gallery - Pakistan Super Fireworks</title>
         <meta name="description" content="Explore our gallery of spectacular fireworks displays from weddings, corporate events, private parties, and national celebrations across Pakistan." />
       </Head>
       
@@ -432,7 +432,7 @@ export default function Gallery({ galleryItems }) {
       
       {/* Main Content Wrapper */}
       <div className="relative z-10 overflow-x-hidden">
-        <div className="py-16 md:py-24">
+        <div className="pt-28 pb-16 md:pb-24">
           <div className="container mx-auto px-4">
             <motion.div 
               variants={fadeInUp}

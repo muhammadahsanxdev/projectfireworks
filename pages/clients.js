@@ -263,7 +263,7 @@ export default function Clients() {
   return (
     <Layout title="Our Clients | Pakistan Super Fireworks">
       {/* Hero Section */}
-      <section className="relative py-20">
+      <section className="relative pt-28 pb-20">
         <div className="absolute inset-0 bg-black bg-opacity-60" style={sectionOverlayStyle}></div>
         <div className="container relative z-10">
           <motion.div 

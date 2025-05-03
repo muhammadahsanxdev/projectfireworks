@@ -81,7 +81,7 @@ export default function About() {
         <meta name="description" content="Learn about Pakistan Super FireWorks, our history, our team, and our commitment to providing the highest quality fireworks displays for all occasions." />
       </Head>
 
-      <div className="relative z-10 py-20">
+      <div className="relative z-10 pt-28 pb-20">
         <div className="container mx-auto px-4">
           {/* Hero Section */}
           <motion.div 

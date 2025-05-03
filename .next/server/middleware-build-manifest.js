@@ -14,6 +14,11 @@ self.__BUILD_MANIFEST = {
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
+    "/404": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/404.js"
+    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -24,10 +29,35 @@ self.__BUILD_MANIFEST = {
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/about": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/about.js"
+    ],
+    "/clients": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/clients.js"
+    ],
+    "/events": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/events.js"
+    ],
+    "/gallery": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/gallery.js"
+    ],
     "/packages": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/packages.js"
+    ],
+    "/videos": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/videos.js"
     ]
   },
   "ampFirstPages": []

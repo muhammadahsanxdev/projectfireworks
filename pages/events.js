@@ -79,13 +79,13 @@ export default function Events() {
   return (
     <Layout>
       <Head>
-        <title>Events & Services - Pakistan Super FireWorks</title>
+        <title>Events & Services - Pakistan Super Fireworks</title>
         <meta name="description" content="Explore our premium fireworks display services for weddings, corporate events, private parties, and national celebrations across Pakistan." />
       </Head>
       
       {/* Main Content Wrapper */}
       <div className="relative z-10">
-        <section className="py-16 md:py-24">
+        <section className="pt-28 pb-16 md:pb-24">
           <div className="container mx-auto px-4">
             <motion.div 
               className="max-w-4xl mx-auto text-center mb-16"

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient background -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF0000" />
+      <stop offset="100%" stop-color="#FF8C00" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle with gradient -->
+  <circle cx="16" cy="16" r="16" fill="url(#gradient)" />
+  
+  <!-- PSFW text -->
+  <text x="16" y="19" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="white">PSFW</text>
+</svg> 

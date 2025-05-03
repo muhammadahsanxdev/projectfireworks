@@ -1,5 +1,5 @@
 {
-  "name": "Pakistan Super FireWorks",
+  "name": "Pakistan Super Fireworks",
   "short_name": "PSFW",
   "description": "Pakistan's Biggest Digital Fire Works Company",
   "icons": [
@@ -14,8 +14,8 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ff5500",
-  "background_color": "#ffffff",
+  "theme_color": "#ff4800",
+  "background_color": "#000000",
   "display": "standalone",
   "start_url": "/"
 } 

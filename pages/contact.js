@@ -150,12 +150,12 @@ export default function Contact() {
       keywords="contact fireworks pakistan, fireworks contact, event fireworks contact, wedding fireworks contact"
     >
       <Head>
-        <title>Contact Us - Pakistan Super FireWorks</title>
+        <title>Contact Us - Pakistan Super Fireworks</title>
         <meta name="description" content="Get in touch with Pakistan Super FireWorks for custom fireworks displays, quotes, and information. We serve all major cities across Pakistan." />
       </Head>
       
       {/* Main Content */}
-      <div className="relative z-10 py-20">
+      <div className="relative z-10 pt-28 pb-20">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
